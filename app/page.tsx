@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Home() {
   const copyCmd = () => {
-    navigator.clipboard.writeText('curl -fsSL https://strm.sh/install.sh | bash')
+    navigator.clipboard.writeText('curl -fsSL https://strm-website.vercel.app/install.sh | bash')
   }
 
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       <div className="install-box">
         <div className="install-label">Install</div>
         <div className="install-cmd" onClick={copyCmd} title="Click to copy">
-          <span className="prompt">$ </span>curl -fsSL https://strm.sh/install.sh | bash
+          <span className="prompt">$ </span>curl -fsSL https://strm-website.vercel.app/install.sh | bash
         </div>
       </div>
 
