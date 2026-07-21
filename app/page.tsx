@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function Home() {
   const copyCmd = () => {
     navigator.clipboard.writeText('curl -fsSL https://strm.sh/install.sh | bash')
@@ -12,6 +14,10 @@ export default function Home() {
         Search any movie or series from your terminal.<br />
         Type a name. Pick a result. Watch instantly.
       </p>
+
+      <div className="screenshot">
+        <Image src="/screenshot.png" alt="STRM terminal interface" width={800} height={500} priority />
+      </div>
 
       <div className="install-box">
         <div className="install-label">Install</div>
